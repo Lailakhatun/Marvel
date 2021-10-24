@@ -1,0 +1,126 @@
+#contact_part {
+    padding-bottom: 120px;
+
+    .contact_info {
+        background: #474747;
+        padding-bottom: 8px;
+        border-radius: 0 0 3px 3px;
+        -webkit-border-radius: 0 0 3px 3px;
+        -moz-border-radius: 0 0 3px 3px;
+        -ms-border-radius: 0 0 3px 3px;
+        -o-border-radius: 0 0 3px 3px;
+
+        .contact_text {
+            h3 {
+                @include fntsy(#fff, 30px, 700, $open);
+                margin-bottom: 20px;
+            }
+
+            p {
+                @include fntsy(#fff, 16px, 400, $open);
+                margin-bottom: 10px;
+            }
+
+            p {
+                a {
+                    @include fntsy(#fff, 16px, 500, $open);
+                    &:hover{
+                        color:#ffc200;
+                    }
+                }
+            }
+        }
+
+        .contact_icon {
+            ul {
+                li {
+                    a {
+                        color: #fff;
+                        font-size: 20px;
+                        margin: 5px 0;
+
+                        &:hover {
+                            color: #ffc200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_form {
+        padding: 100px 0 0 20px;
+    
+        h2 {
+            @include fntsy(#353535, 30px, 900, $open);
+            margin-bottom: 30px;
+            text-transform: capitalize;
+        }
+
+        .input_form {
+            input {
+                width: 100%;
+                border: 0;
+                border: 1px solid #6c757d;
+                outline: 0;
+                padding: 10px 3%;
+                @include fntsy(#6c757d, 16px, 700, $open);
+                text-transform: capitalize;
+
+                &:hover{
+                    border-color: #ffc200;
+                }
+
+            }
+
+            .name {
+                width: 48%;
+                margin-right: 4%;
+                float: left;
+                margin-bottom: 30px;
+            }
+
+            .email {
+                width: 48%;
+                float: left;
+                margin-bottom: 30px;
+            }
+
+            .message {
+                textarea {
+                    width: 100%;
+                    border: 0;
+                    border: 1px solid #6c757d;
+                    outline: 0;
+                    padding: 5px 3%;
+                    @include fntsy(#6c757d, 16px, 700, $open);
+                    text-transform: capitalize;
+                    &:hover{
+                        border-color: #ffc200;
+                    }
+                }
+            }
+            button{
+                @include fntsy(#fff, 16px, 700, $open);
+                text-transform: capitalize;
+                float: right;
+                margin-top: 30px;
+                border:0;
+                background: none;
+                padding:0 50px;
+                line-height: 45px;
+                background: #ffc200;
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                &:hover{
+                    background: #474747;
+                    
+                }
+}
+        }
+
+    }
+}

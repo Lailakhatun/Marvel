@@ -1,0 +1,19 @@
+#footer_part{
+    padding-bottom: 100px;
+    .footer_text{
+        p{
+            @include fntsy(#484848, 16px, 500, $open);
+            margin-bottom: 30px;
+            text-transform: capitalize;
+            span{
+                color:#1e7ceb;
+                &:hover{
+                    color:#ffc200;
+                }
+            }
+            &:nth-child(2n+2){
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.color_mode {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    background: #ffc200;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    input {
+        display: none
+    }
+
+    label {
+        @include fntsy(#000, 20px, 700, $open);
+        text-transform: uppercase;
+    }
+}
+
+.dark {
+    background: #4c4c78;
+}
+
+.dark .main_menu a {
+    color: #fff;
+}
+
+.dark .menu-fix a {
+    color: #000 !important;
+}
+
+.dark .menu-fix a span {
+    color: #000 !important;
+}
+
+.dark .banner_text span {
+    color: #fff;
+}
+.dark #skill_part .skill_text h2 {
+    color: #fff !important;
+}
+
+.dark #skill_part .skill_text h3 {
+    color:#fff !important;
+}
+
+.dark span{
+    color: #fff !important;
+}
+

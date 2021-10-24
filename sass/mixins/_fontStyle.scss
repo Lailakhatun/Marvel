@@ -1,0 +1,7 @@
+@mixin fntsy($cl,$fs,$fw,$ff){
+    color:$cl;
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+    
+}

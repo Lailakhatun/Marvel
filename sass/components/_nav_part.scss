@@ -1,0 +1,95 @@
+@import '../mixins/fontStyle';
+@import '../variables/fontFamily';
+@import '../variables/transition';
+
+// nav part start
+.main_menu {
+    padding: 30px 0;
+
+    a.navbar-brand {
+        @include fntsy(rgba(0, 0, 0, 0.9), 30px, 700, $open);
+        text-transform: capitalize;
+        transition: $trans;
+        -webkit-transition: $trans;
+        -moz-transition: $trans;
+        -ms-transition: $trans;
+        -o-transition: $trans;
+
+        &:hover {
+            color: #ffc200;
+
+            i {
+                color: #ffc200;
+            }
+        }
+
+        i {
+            color: #000;
+            font-size: 40px;
+            margin-right: 15px;
+            transition: $trans;
+            -webkit-transition: $trans;
+            -moz-transition: $trans;
+            -ms-transition: $trans;
+            -o-transition: $trans;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                @include fntsy(#666, 16px, 700, $open);
+                text-transform: capitalize;
+                margin: 0 10px;
+                overflow: hidden;
+
+
+                span {
+                    position: relative;
+                    transition: transform 500ms;
+                    -webkit-transition: transform 500ms;
+                    -moz-transition: transform 500ms;
+                    -ms-transition: transform 500ms;
+                    -o-transition: transform 500ms;
+
+                    &::after {
+                        position: absolute;
+                        content: attr(data-hover);
+                        top: 35px;
+                        left: 0;
+                        transform: translate3d(0, 0, 0);
+                        -webkit-transform: translate3d(0, 0, 0);
+                        -moz-transform: translate3d(0, 0, 0);
+                        -ms-transform: translate3d(0, 0, 0);
+                        -o-transform: translate3d(0, 0, 0);
+                    }
+                }
+
+                &:hover span,
+                &:focus span {
+                    color: #ffc200;
+                    transform: translateY(-40px);
+                    -webkit-transform: translateY(-40px);
+                    -moz-transform: translateY(-40px);
+                    -ms-transform: translateY(-40px);
+                    -o-transform: translateY(-40px);
+                }
+            }
+            a.active{
+                color:#ffc200;
+            }
+        }
+    }
+   
+}
+
+.menu-fix{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ffc200;
+    z-index: 99999;
+    padding:10px 0;
+}

@@ -1,0 +1,77 @@
+#slider_part {
+    padding-bottom: 120px;
+
+    .slider_image {
+        .prearr {
+            position: absolute;
+            font-size: 20px;
+            color: #212121;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            z-index: 999;
+
+            &:hover {
+                color: #ffc200;
+            }
+        }
+
+        .nextarr {
+            position: absolute;
+            font-size: 20px;
+            color: #212121;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            z-index: 999;
+
+            &:hover {
+                color: #ffc200;
+            }
+        }
+
+        ul.slick-dots {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+
+            li {
+                button {
+                    width: 10px;
+                    height: 10px;
+                    font-size: 0;
+                    border: 0;
+                    margin: 0 5px;
+                    background: #5d5d5d;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+
+                    &:hover {
+                        background: #ffc200;
+                    }
+                }
+            }
+
+            li.slick-active button {
+                background: #ffc200;
+            }
+        }
+    }
+}
