@@ -1002,11 +1002,19 @@ html {
   color: #fff !important;
 }
 
+.dark .contact_form h2 {
+  color: #fff !important;
+}
+
 .dark #skill_part .skill_text h3 {
   color: #fff !important;
 }
 
 .dark span {
+  color: #fff !important;
+}
+
+.dark p {
   color: #fff !important;
 }
 /*# sourceMappingURL=style.css.map */
